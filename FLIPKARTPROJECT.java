@@ -66,7 +66,7 @@ public class FLIPKARTPROJECT {
 		   
 		   
 		
-		   // Task 4: Capture product listings
+		   // ----------------Task 4: Capture product listings---------------------
 		   
 				   System.out.println("\n---- Task 4: Capture Product Listings ----");
 				
@@ -137,7 +137,7 @@ public class FLIPKARTPROJECT {
 		     // ----- Task 6: Click on First Product from Search Results -----
 		        System.out.println("\n---- Task 6: Click on First Product ----");
 
-		     // ----- Task 5: Search -----
+		
 		     // ----- Click on search box and enter 'mobile' -----
 		        WebDriverWait wait1 = new WebDriverWait(driver, 20);
 		        WebElement searchBox = wait1.until(ExpectedConditions.elementToBeClickable(By.name("q")));
@@ -145,7 +145,7 @@ public class FLIPKARTPROJECT {
 		        searchBox.sendKeys("mobile");
 		        searchBox.submit();
 		        System.out.println("Search submitted for 'mobile'.");
-		     // ----- S Click on the specific product -----
+		     // ----- -----Click on the specific product -----
 	            WebElement productDiv = wait.until(ExpectedConditions.visibilityOfElementLocated(
 	                    By.xpath("//div[@class='KzDlHZ' and text()='IQOO Z10X 5G (Titanium, 128 GB)']"))
 	            );
@@ -227,6 +227,7 @@ public class FLIPKARTPROJECT {
 				}
 
 	}
+
 
 
 
